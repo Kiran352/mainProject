@@ -1,9 +1,10 @@
 package com.xworkz.project2.service;
 
+import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,22 +16,24 @@ import com.xworkz.project2.entity.RegisterEntity;
 @Component
 public class RegisterServiceImpl implements RegisterService {
 
+	private static final int lengthOfPassword = 8;
+
 	@Autowired
 	RegisterDaoImpl daoImpl;
+	private static final Logger logger = Logger.getLogger(RegisterServiceImpl.class);
 
 	public RegisterServiceImpl() {
 		super();
-		System.out.println("Object created\t" + this.getClass().getSimpleName());
+		logger.info("Object created\t" + this.getClass().getSimpleName());
 	}
 
 	@Override
 	public Map<String, String> validateAndSavRegisterDeatils(RegisterDto registerDto) {
-		System.out.println("Service method invoked");
+		logger.info("Service method invoked");
 		Map<String, String> map = new HashMap<String, String>();
 		boolean status = false;
 		boolean uid_exist = true;
 		boolean email_exist = true;
-		System.out.println(registerDto.getUsrId());
 
 		if (registerDto.getUsrId().length() > 3 && !registerDto.getUsrId().startsWith(" ")) {
 			status = true;
@@ -78,15 +81,17 @@ public class RegisterServiceImpl implements RegisterService {
 				}
 
 				if (uid_exist == false && email_exist == false) {
-					Random random = new Random();
+					// Random random = new Random();
 					String pwd = null;
-					String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-					char password[] = new char[8];
-					for (int i = 0; i < password.length; i++) {
-						password[i] = letters.charAt(random.nextInt(letters.length()));
-						pwd = password.toString();
+					// String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+					// char password[] = new char[8];
+					// for (int i = 0; i < password.length; i++) {
+					// password[i] = letters.charAt(random.nextInt(letters.length()));
+					// pwd = password.toString();
 
-					}
+					// }
+					pwd = RegisterServiceImpl.generateRandomPassword(this.lengthOfPassword);
+
 					RegisterEntity entity = new RegisterEntity();
 					BeanUtils.copyProperties(registerDto, entity);
 					entity.setPassword(pwd);
@@ -105,4 +110,22 @@ public class RegisterServiceImpl implements RegisterService {
 
 	}
 
+
+	public static String generateRandomPassword(int len) {
+		// ASCII range - alphanumeric (0-9, a-z, A-Z)
+		final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+		SecureRandom random = new SecureRandom();
+		StringBuilder sb = new StringBuilder();
+
+		// each iteration of loop choose a character randomly from the given ASCII range
+		// and append it to StringBuilder instance
+
+		for (int i = 0; i < len; i++) {
+			int randomIndex = random.nextInt(chars.length());
+			sb.append(chars.charAt(randomIndex));
+		}
+
+		return sb.toString();
+	}
 }

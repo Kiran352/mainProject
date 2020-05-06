@@ -2,6 +2,7 @@ package com.xworkz.project2.controller;
 
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
@@ -15,24 +16,26 @@ import com.xworkz.project2.service.LoginServiceImpl;
 @RequestMapping("/")
 public class LoginController {
 
+	
+	private static final Logger logger = Logger.getLogger(RegisterController.class);
 	@Autowired
 	LoginServiceImpl serviceImpl;
 	
 	public LoginController() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+		logger.info("Object created \t" + this.getClass().getSimpleName());
 	}
 	
 	@RequestMapping("/login.do")
 	public String loginUser(@ModelAttribute LoginDto loginDto,Model model) {
 		Map<String, String> map;
-		System.out.println("Login method invoked");
-		System.out.println("Form data is"+loginDto);
+		logger.info("Login method invoked");
+		//System.out.println("Form data is"+loginDto);
 		map = serviceImpl.validateAndLogin(loginDto);
 		String status=map.get("status");
 		
 		if(status.equals("success")) {
-			return "HomePage.jsp";
+			return "HomePage";
 		}
 		
 		
@@ -45,7 +48,7 @@ public class LoginController {
 		model.addAttribute("fail",map.get("fail"));
 		model.addAttribute("block",map.get("block"));
 		
-		return "Login.jsp";
+		return "Login";
 		
 		
 	}

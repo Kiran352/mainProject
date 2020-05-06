@@ -3,6 +3,7 @@ package com.xworkz.project2.dao;
 import java.io.Serializable;
 import java.util.Objects;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -14,17 +15,20 @@ import com.xworkz.project2.entity.RegisterEntity;
 @Component
 public class RegisterDaoImpl implements RegisterDao {
 
+	
+	private static final Logger logger = Logger.getLogger(RegisterDaoImpl.class);
+	
 	@Autowired
 	SessionFactory factory;
 
 	public RegisterDaoImpl() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+	logger.info("Object created \t" + this.getClass().getSimpleName());
 	}
 
 	@Override
 	public boolean readUid(String uId) {
-		System.out.println("inside the read uid method");
+		logger.info("inside the read uid method");
 		Session session;
 		boolean status = false;
 		RegisterEntity entity = null;
@@ -35,10 +39,10 @@ public class RegisterDaoImpl implements RegisterDao {
 			query.setParameter("uId", uId);
 			Object result = query.uniqueResult();
 			entity = (RegisterEntity) result;
-			System.out.println("inside the read id" + entity);
+			logger.info("inside the read id" + entity);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 
 		if (Objects.nonNull(entity)) {
@@ -49,8 +53,9 @@ public class RegisterDaoImpl implements RegisterDao {
 
 	@Override
 	public boolean readEmail(String email) {
-		System.out.println("inside the read mail method");
-
+		logger.info("inside the read mail method");
+		
+		
 		Session session;
 		boolean status = false;
 		RegisterEntity entity = null;
@@ -87,7 +92,7 @@ public class RegisterDaoImpl implements RegisterDao {
 		} catch (Exception e) {
 
 			session.getTransaction().rollback();
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return false;
 	}

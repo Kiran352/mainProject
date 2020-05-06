@@ -2,6 +2,7 @@ package com.xworkz.project2.controller;
 
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
@@ -15,17 +16,20 @@ import com.xworkz.project2.service.RegisterService;
 @RequestMapping("/")
 public class RegisterController {
 
+	
+	private static final Logger logger = Logger.getLogger(RegisterController.class);
 	@Autowired
 	RegisterService registerService;
 
 	public RegisterController() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+		this.logger.info("Object created \t" + this.getClass().getSimpleName());
+		
 	}
 
 	@RequestMapping("/registerUser.do")
 	public String registerUser(@ModelAttribute RegisterDto registerDto, Model model) {
-		System.out.println("Controller method invoked");
+		this.logger.info("Controller method invoked");
 		System.out.println(registerDto);
 		Map<String, String> map = registerService.validateAndSavRegisterDeatils(registerDto);
 
@@ -36,7 +40,7 @@ public class RegisterController {
 		model.addAttribute("uid_exist", map.get("uid_exist"));
 		model.addAttribute("email_exist", map.get("email_exist"));
 
-		return "Registration.jsp";
+		return "Registration";
 	}
 
 }

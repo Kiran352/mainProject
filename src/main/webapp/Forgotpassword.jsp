@@ -1,9 +1,5 @@
 
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script
@@ -30,8 +26,11 @@ span {
 	text-align: right;
 }
 </style>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
 <body>
-
 	<nav class="navbar navbar-inverse"
 		style="background-color: #696969; border-color: #696969">
 		<div class="container-fluid">
@@ -49,32 +48,30 @@ span {
 			</div>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="Registration.jsp"><span
-						style="color: #FFA500; font-family: monospace;">Registration</span></a></li>
+				<li><a href="Login.jsp"><span
+						style="color: #FFA500; font-family: monospace;">Login</span></a></li>
 
 
 			</ul>
 		</div>
 	</nav>
-	${invalid} ${fail} ${block}
+
 	<div class="row" style="align-self: center;">
-		<div class="col-sm-4">
-			<form action="login.do" method="post">
+	<div class="col-sm-4">
+	</div>
+		<div class="col-sm-4" style="border: medium ; border-width:medium; border-bottom-color: black;">
+			<form action="resetPassword.do" method="post">
 
 				<div class="form-group">
 					<label>Email</label> <input type="email" class="form-control"
-						name="email" placeholder="Enter registered email"><br>${email_err}
-
-
-				</div>
-				<div class="form-group">
-					<label>Password</label> <input type="text" name="password"
-						class="form-control" placeholder="Enter valid password"><br>${pwd_err}
+						name="email" placeholder="Enter registered email"><br>
 
 
 				</div>
 
-				<button class="btn btn-primary" type="submit">Login</button><a href="Forgotpassword.jsp">Forgot Password?</a>
+
+				<button class="btn btn-primary" type="submit">Reset</button>
+				
 
 			</form>
 
@@ -83,8 +80,6 @@ span {
 
 		</div>
 	</div>
-
-
 
 
 
@@ -97,5 +92,6 @@ span {
 		</div>
 
 	</footer>
+
 </body>
 </html>

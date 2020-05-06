@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
+import org.apache.log4j.Logger;
+
 
 public class RegisterDto implements Serializable {
 	
@@ -13,9 +15,13 @@ public class RegisterDto implements Serializable {
 	private String phone;
 	private String course;
 	private String agree;
+	
+	private static final Logger logger = Logger.getLogger(RegisterDto.class);
+	
+	
 	public RegisterDto() {
 		super();
-		System.out.println("Object created \t"+this.getClass().getSimpleName());
+		logger.info("Object created \t"+this.getClass().getSimpleName());
 	}
 	public String getUsrId() {
 		return usrId;

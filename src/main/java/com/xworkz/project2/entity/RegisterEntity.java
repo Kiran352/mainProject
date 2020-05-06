@@ -1,14 +1,23 @@
-package com.xworkz.project2.entity;
+	package com.xworkz.project2.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+
+import org.apache.log4j.Logger;
 
 @Entity
 @Table(name = "user_register")
+@NamedQueries({ @NamedQuery(name = "fetchByEmail", query = "select e from RegisterEntity e where e.email=:email"),
+		@NamedQuery(name = "updatePassword", query = "update  RegisterEntity ent set ent.password=:password where ent.email=:email"),
+		@NamedQuery(name = "updateLoginCount", query = "update RegisterEntity ent set ent.login_count=:count where ent.email=:email")
+
+})
 public class RegisterEntity {
 
 	@Id
@@ -30,9 +39,12 @@ public class RegisterEntity {
 	@Column(name = "LOGIN_COUNT")
 	private int login_count;
 
+	private static final Logger logger = Logger.getLogger(RegisterEntity.class);
+	
+	
 	public RegisterEntity() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+		logger.info("Object created \t" + this.getClass().getSimpleName());
 	}
 
 	public int getLogin_count() {

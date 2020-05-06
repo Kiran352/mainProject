@@ -2,6 +2,7 @@ package com.xworkz.project2.dao;
 
 import java.util.Objects;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -13,6 +14,8 @@ import com.xworkz.project2.entity.RegisterEntity;
 @Component
 public class LoginDaImpl implements LoginDao {
 
+	private static final Logger logger = Logger.getLogger(LoginDaImpl.class);
+	
 	@Autowired
 	SessionFactory factory;
 	Session session = null;
@@ -21,7 +24,7 @@ public class LoginDaImpl implements LoginDao {
 
 	public LoginDaImpl() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+		logger.info("Object created \t" + this.getClass().getSimpleName());
 	}
 
 	@Override
@@ -42,7 +45,7 @@ public class LoginDaImpl implements LoginDao {
 
 			System.out.println(entity);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 
 		return count;
@@ -50,7 +53,7 @@ public class LoginDaImpl implements LoginDao {
 
 	@Override
 	public RegisterEntity readPasswordByEmail(String email) {
-		System.out.println("Inside the read password method");
+		logger.info("Inside the read password method");
 		RegisterEntity entity = null;
 		try {
 			session = factory.openSession();
@@ -60,7 +63,7 @@ public class LoginDaImpl implements LoginDao {
 			Object object = query.uniqueResult();
 			entity = (RegisterEntity) object;
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return entity;
 	}
@@ -68,9 +71,9 @@ public class LoginDaImpl implements LoginDao {
 	@Override
 	public void updatePasswordCount(int count, String email) {
 
-		System.out.println("Inside the update password count");
-		System.out.println(count);
-		RegisterEntity entity = null;
+		logger.info("Inside the update password count");
+		
+		//RegisterEntity entity = null;
 		try {
 			session = factory.openSession();
 			session.beginTransaction();
@@ -80,9 +83,9 @@ public class LoginDaImpl implements LoginDao {
 			query.setParameter("count", count);
 			int update = query.executeUpdate();
 			session.getTransaction().commit();
-			System.out.println(update);
+			logger.info(update);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 
 	}

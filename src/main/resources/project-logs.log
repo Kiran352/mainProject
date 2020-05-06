@@ -1,0 +1,208 @@
+[INFO] :--->06 May 2020 21:18:21,905  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:18:22,098  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:18:22 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:18:22,490  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:18:29,226  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:18:30,280  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:18:30,291  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:18:31,426  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:18:35,241  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:18:35,245  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:18:36,390  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:18:47,093  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:18:51,551  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:18:53,541  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:18:54,215  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:18:54,239  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:18:54,246  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:18:54,265  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:18:54,270  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:18:54,275  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:18:54,962  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:18:54,962  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:18:54,963  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:18:55,358  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 33452 ms 
+[INFO] :--->06 May 2020 21:19:08,053  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:18:22 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:19:43,555  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:19:44,064  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:19:44 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:19:44,505  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:19:49,290  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:19:49,550  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:19:49,557  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:19:49,734  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:19:59,776  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:19:59,779  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:20:00,608  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:20:11,860  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:20:15,001  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:20:15,453  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:20:15,695  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:20:15,700  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:20:15,705  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:20:15,709  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:20:15,712  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:20:15,715  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:20:16,949  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:20:16,950  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:20:16,951  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:20:18,412  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 34720 ms 
+[INFO] :--->06 May 2020 21:20:28,750  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:19:44 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:20:41,187  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:20:41,211  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:20:41 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:20:41,248  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:20:42,638  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:20:42,721  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:20:42,728  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:20:42,768  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:20:43,424  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:20:43,427  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:20:43,491  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:20:43,997  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:20:44,621  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:20:44,838  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:20:44,973  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:20:44,977  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:20:44,981  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:20:44,984  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:20:44,986  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:20:44,990  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:20:45,199  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:20:45,199  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:20:45,199  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:20:45,289  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 4101 ms 
+[INFO] :--->06 May 2020 21:22:32,518  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:20:41 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:22:52,951  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:22:53,046  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:22:53 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:22:53,137  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:22:53,896  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:22:53,940  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:22:53,946  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:22:53,999  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:22:54,327  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:22:54,331  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:22:54,429  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:22:55,843  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:22:56,420  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:22:56,775  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:22:56,921  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:22:56,924  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:22:56,928  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:22:56,932  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:22:56,935  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:22:56,939  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:22:57,179  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:22:57,179  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:22:57,180  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:22:57,385  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 4434 ms 
+[INFO] :--->06 May 2020 21:23:07,742  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:22:53 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:23:09,727  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:23:09,762  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:23:09 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:23:09,829  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:23:10,263  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:23:10,304  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:23:10,309  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:23:10,350  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:23:10,583  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:23:10,586  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:23:10,679  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:23:11,258  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:23:11,942  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:23:12,192  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:23:12,372  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:23:12,375  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:23:12,380  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:23:12,385  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:23:12,389  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:23:12,394  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:23:12,678  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:23:12,678  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:23:12,679  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:23:12,805  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 3078 ms 
+[INFO] :--->06 May 2020 21:23:44,229  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:23:09 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:23:45,812  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:23:45,852  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:23:45 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:23:45,926  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:23:46,411  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:23:46,440  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:23:46,445  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:23:46,484  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:23:46,647  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:23:46,649  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:23:46,703  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:23:47,184  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:23:47,955  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:23:48,198  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:23:48,335  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:23:48,338  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:23:48,342  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:23:48,345  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:23:48,348  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:23:48,353  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:23:48,546  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:23:48,546  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:23:48,547  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:23:48,637  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 2824 ms 
+[INFO] :--->06 May 2020 21:24:20,173  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:23:45 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:24:21,242  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:24:21,266  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:24:21 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:24:21,307  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:24:21,613  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:24:21,637  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:24:21,641  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:24:21,666  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:24:21,801  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:24:21,803  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:24:21,857  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:24:22,423  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:24:22,863  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:24:23,062  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:24:23,188  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:24:23,192  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:24:23,195  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:24:23,199  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:24:23,202  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:24:23,205  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:24:23,403  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:24:23,404  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:24:23,404  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:24:23,521  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 2278 ms 
+[INFO] :--->06 May 2020 21:24:58,913  com.xworkz.project2.dto.RegisterDto  Object created 	RegisterDto 
+[INFO] :--->06 May 2020 21:24:58,927  com.xworkz.project2.controller.RegisterController  Controller method invoked 
+[INFO] :--->06 May 2020 21:24:58,928  com.xworkz.project2.service.RegisterServiceImpl  Service method invoked 
+[INFO] :--->06 May 2020 21:24:58,928  com.xworkz.project2.dao.RegisterDaoImpl  inside the read uid method 
+[INFO] :--->06 May 2020 21:24:59,945  com.xworkz.project2.dao.RegisterDaoImpl  inside the read idnull 
+[INFO] :--->06 May 2020 21:24:59,946  com.xworkz.project2.dao.RegisterDaoImpl  inside the read mail method 
+[INFO] :--->06 May 2020 21:25:00,064  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:26:22,444  com.xworkz.project2.dto.LoginDto  Object created 	LoginDto 
+[INFO] :--->06 May 2020 21:26:22,474  com.xworkz.project2.controller.RegisterController  Login method invoked 
+[INFO] :--->06 May 2020 21:26:22,475  com.xworkz.project2.service.LoginServiceImpl  Login Service Method Invoked 
+[INFO] :--->06 May 2020 21:26:22,701  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:26:22,742  com.xworkz.project2.service.LoginServiceImpl  Email count is1 
+[INFO] :--->06 May 2020 21:26:22,742  com.xworkz.project2.dao.LoginDaImpl  Inside the read password method 
+[INFO] :--->06 May 2020 21:26:22,798  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:26:22,798  com.xworkz.project2.dao.LoginDaImpl  Inside the update password count 
+[INFO] :--->06 May 2020 21:26:23,027  com.xworkz.project2.dao.LoginDaImpl  1 
+[INFO] :--->06 May 2020 21:26:43,767  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:24:21 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:26:47,714  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization started 
+[INFO] :--->06 May 2020 21:26:47,735  org.springframework.web.context.support.XmlWebApplicationContext  Refreshing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:26:47 IST 2020]; root of context hierarchy 
+[INFO] :--->06 May 2020 21:26:47,771  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/spring.xml] 
+[INFO] :--->06 May 2020 21:26:48,076  com.xworkz.project2.controller.RegisterController  Object created 	ForgotPasswordController 
+[INFO] :--->06 May 2020 21:26:48,152  com.xworkz.project2.service.ResetPasswordServiceImpl  Objcet created 	ResetPasswordServiceImpl 
+[INFO] :--->06 May 2020 21:26:48,157  com.xworkz.project2.dao.ResetPasswordDaoImpl  Object created 	ResetPasswordDaoImpl 
+[INFO] :--->06 May 2020 21:26:48,195  org.springframework.jdbc.datasource.DriverManagerDataSource  Loaded JDBC driver: com.mysql.cj.jdbc.Driver 
+[INFO] :--->06 May 2020 21:26:48,503  org.hibernate.Version  HHH000412: Hibernate Core {5.2.12.Final} 
+[INFO] :--->06 May 2020 21:26:48,505  org.hibernate.cfg.Environment  HHH000206: hibernate.properties not found 
+[INFO] :--->06 May 2020 21:26:48,569  org.hibernate.annotations.common.Version  HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+[INFO] :--->06 May 2020 21:26:49,051  org.hibernate.dialect.Dialect  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[INFO] :--->06 May 2020 21:26:49,654  com.xworkz.project2.entity.RegisterEntity  Object created 	RegisterEntity 
+[INFO] :--->06 May 2020 21:26:49,880  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  HHH000397: Using ASTQueryTranslatorFactory 
+[INFO] :--->06 May 2020 21:26:50,148  com.xworkz.project2.controller.RegisterController  Object created 	LoginController 
+[INFO] :--->06 May 2020 21:26:50,151  com.xworkz.project2.service.LoginServiceImpl  Object created 	LoginServiceImpl 
+[INFO] :--->06 May 2020 21:26:50,154  com.xworkz.project2.dao.LoginDaImpl  Object created 	LoginDaImpl 
+[INFO] :--->06 May 2020 21:26:50,157  com.xworkz.project2.controller.RegisterController  Object created 	RegisterController 
+[INFO] :--->06 May 2020 21:26:50,160  com.xworkz.project2.service.RegisterServiceImpl  Object created	RegisterServiceImpl 
+[INFO] :--->06 May 2020 21:26:50,164  com.xworkz.project2.dao.RegisterDaoImpl  Object created 	RegisterDaoImpl 
+[INFO] :--->06 May 2020 21:26:50,399  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/resetPassword.do] onto handler 'forgotPasswordController' 
+[INFO] :--->06 May 2020 21:26:50,400  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/login.do] onto handler 'loginController' 
+[INFO] :--->06 May 2020 21:26:50,400  org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping  Mapped URL path [/registerUser.do] onto handler 'registerController' 
+[INFO] :--->06 May 2020 21:26:50,483  org.springframework.web.servlet.DispatcherServlet  FrameworkServlet 'project': initialization completed in 2769 ms 
+[INFO] :--->06 May 2020 21:27:21,038  org.springframework.web.context.support.XmlWebApplicationContext  Closing WebApplicationContext for namespace 'project-servlet': startup date [Wed May 06 21:26:47 IST 2020]; root of context hierarchy 

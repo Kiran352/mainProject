@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,16 +18,18 @@ public class LoginServiceImpl implements LoginService {
 	@Autowired
 	LoginDaImpl loginDaImpl;
 	int count = 1;
+	
+	private static final Logger logger = Logger.getLogger(LoginServiceImpl.class);
 
 	public LoginServiceImpl() {
 		super();
-		System.out.println("Object created \t" + this.getClass().getSimpleName());
+		logger.info("Object created \t" + this.getClass().getSimpleName());
 	}
 
 	@Override
 	public Map<String, String> validateAndLogin(LoginDto loginDto) {
 		Map<String, String> map = new HashMap<String, String>();
-		System.out.println("Login Service Method Invoked");
+		logger.info("Login Service Method Invoked");
 		boolean status = false;
 		if (Objects.nonNull(loginDto)) {
 			if (loginDto.getEmail().length() > 3 && loginDto.getEmail().endsWith(".com")) {
@@ -47,7 +50,7 @@ public class LoginServiceImpl implements LoginService {
 
 		if (status) {
 			int email_count = loginDaImpl.countOnEmail(loginDto.getEmail());
-			System.out.println("Email count is" + email_count);
+			logger.info("Email count is" + email_count);
 
 			if (email_count > 0) {
 				RegisterEntity entity = loginDaImpl.readPasswordByEmail(loginDto.getEmail());
@@ -60,7 +63,7 @@ public class LoginServiceImpl implements LoginService {
 						loginDaImpl.updatePasswordCount(count, loginDto.getEmail());
 						return map;
 					} else {
-						System.out.println("Inside else failure");
+						logger.info("Inside else failure");
 
 						loginDaImpl.updatePasswordCount(count, loginDto.getEmail());
 						count++;
